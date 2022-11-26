@@ -6,9 +6,11 @@ type NEFPostRequest struct {
 }
 
 func PostNEFSubscription() {
-	notifyUrl := CoreUrl + "/subscriptions"
-	body := NEFPostRequest{NEFid, notifyUrl}
+	const notifyUrl = "http://localhost:3333/notify"
+	const id = "54321"
 
-	Post(notifyUrl, body)
+	body := NEFPostRequest{id, notifyUrl}
+
+	Post(CoreUrl, body)
 
 }

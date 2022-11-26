@@ -3,10 +3,10 @@ package commands
 import "fmt"
 
 type NotifyData struct {
-	ID uint64 `json:"id"`
+	Data string `json:"data"`
 }
 
 // Use the data
 func AF(data *NotifyData) {
-	fmt.Printf("Data received in AF: %d \n", data.ID)
+	fmt.Printf("Data received in AF: %s \n", data.Data)
 }
