@@ -1,5 +1,7 @@
 package httpclient
 
+import "fmt"
+
 type NEFPostRequest struct {
 	Id   string `json:"id"`
 	Addr string `json:"addr"`
@@ -12,6 +14,12 @@ func PostNEFSubscription() {
 
 	body := NEFPostRequest{id, notifyUrl}
 
-	Post(CoreUrl+NEFSubscriptionURI, body)
+	isOk := Post(CoreUrl+NEFSubscriptionURI, body)
+
+	if isOk {
+		fmt.Println("NEF Registration Success")
+	} else {
+		fmt.Println("NEF Registration Failure")
+	}
 
 }

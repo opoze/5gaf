@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-func Post[T any](url string, body T) {
+func Post[T any](url string, body T) bool {
 
 	fmt.Println(url)
 	fmt.Println(body)
@@ -21,14 +21,15 @@ func Post[T any](url string, body T) {
 
 	if err != nil {
 		fmt.Printf("http-client: error on POST %s - %s\n", url, err)
+		return false
 	} else {
-		respBody, err := ioutil.ReadAll(resp.Body)
+		_, err := ioutil.ReadAll(resp.Body)
 		if err != nil {
 			fmt.Printf("http-client: could not read response body: %s\n", err)
-		} else {
-			fmt.Printf("client: response body: %s\n", respBody)
 		}
 	}
+
+	return true
 }
 
 func createHTTPJsonPostRequest[T any](url string, body T) *http.Request {
