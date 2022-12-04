@@ -13,11 +13,11 @@ Esta função foi desenvolvida com a **[linguagem Go Lang](https://go.dev/)** e 
 
 ### Com as seguintes dependências:
 - **[Docker](https://www.docker.com/)**
-- **[Docker Composer](https://docs.docker.com/engine/reference/commandline/compose/)**.
+- **[Docker Composer](https://docs.docker.com/engine/reference/commandline/compose/)**
 - **[GoLang 1.6](https://go.dev/)**
 - **[NEF](https://github.com/arieldll/trabalho-cmu)**
 
-### Configurações
+### Configurações:
 Existem dois arquivos "const" no projeto `/src/http-client/consts` e `/src/http-server/consts`
 com as seguintes configurações:
 
@@ -37,7 +37,7 @@ Por conveniência o projeto pode rodar sobre Docker mas, pode também rodar util
 This repository is part of a [research](https://github.com/arieldll/trabalho-cmu) on 5G Mobile Network.
 
 It is an [Aplication Function (AF)](https://github.com/jdegre/5GC_APIs#af-application-function) prove of concept (PoC) designed to comunicate with 5GC [Network Exposure Function (NEF)](https://github.com/arieldll/trabalho-cmu).
-The function is developed with **Go Lang Language** and depends o [NEF]((https://github.com/arieldll/trabalho-cmu)).
+The function is developed with **[Go Lang Language](https://go.dev/)** and depends on [NEF](https://github.com/arieldll/trabalho-cmu).
 
 **It has two functionalities:**
 - Start an HTTP server listen to POST requests on /notify URI
@@ -51,7 +51,7 @@ The function is developed with **Go Lang Language** and depends o [NEF]((https:/
 - **[NEF](https://github.com/arieldll/trabalho-cmu)**
 
 
-### Configurations
+### Configurations:
 There are two const files int the projetct `/src/http-client/consts` and `/src/http-server/consts` with following configurations:
 
 - Configure NEF URL in /src/http-client/consts
