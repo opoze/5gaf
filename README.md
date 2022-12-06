@@ -7,7 +7,7 @@ Este repositório é parte de uma [pesquisa](https://github.com/arieldll/trabalh
 Esta função foi desenvolvida com a **[linguagem Go Lang](https://go.dev/)** e depende do projeto [NEF](https://github.com/arieldll/trabalho-cmu).
 
 **Possui duas funcionalidades:**
-- Iniciar u servidor HTTP que escuta na requests POST na URI /notify
+- Iniciar um servidor HTTP que escuta na requests POST na URI /notify
 - Encaminhar request POST HTTP de inscreção para a NEF
 
 
